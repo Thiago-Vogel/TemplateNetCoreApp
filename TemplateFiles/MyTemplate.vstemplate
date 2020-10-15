@@ -1,0 +1,44 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>TemplateCleanArc</Name>
+    <Description>Template para inicializar um projeto contendo as camadas necessarias para arquitetura onion/limpa</Description>
+    <ProjectType>CSharp</ProjectType>
+	<SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>UnitTests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$projectname$.Web" CopyParameters="true">
+        Web\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$projectname$.IoC" CopyParameters="true">
+        IoC\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$projectname$.Infrastructure" CopyParameters="true">
+        Infrastructure\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$projectname$.AppCore" CopyParameters="true">
+        AppCore\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <SolutionFolder Name="Tests">
+        <ProjectTemplateLink ProjectName="UnitTests" CopyParameters="true">
+          UnitTests\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="IntegrationTests" CopyParameters="true">
+          IntegrationTests\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="FunctionalTests" CopyParameters="true">
+          FunctionalTests\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>
+
+

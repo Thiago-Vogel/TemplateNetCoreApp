@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Template.AppCore</Name>
+    <Description>Template da camada Core na arquitetura clean</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Template.AppCore</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Template.AppCore.csproj" File="Template.AppCore.csproj" ReplaceParameters="true">
+      <Folder Name="Dtos" TargetFolderName="Dtos">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntidadeParams.cs">EntidadeParams.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Implementations" TargetFolderName="Implementations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEF_Context.cs">IEF_Context.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEF_Repository.cs">IEF_Repository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEF_Service.cs">IEF_Service.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseEntity.cs">BaseEntity.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Entidade.cs">Entidade.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EF_Service.cs">EF_Service.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

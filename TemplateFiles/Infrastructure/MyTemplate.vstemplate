@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Template.Infrastructure</Name>
+    <Description>Template para criacao da camada de Infraestrutura na arquitetura clean</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Template.Infrastructure</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Template.Infrastructure.csproj" File="Template.Infrastructure.csproj" ReplaceParameters="true">
+      <Folder Name="DataTypes" TargetFolderName="DataTypes">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EF_Context.cs">EF_Context.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Migrations" TargetFolderName="Migrations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="20201014220349_CreateDataBase.cs">20201014220349_CreateDataBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="20201014220349_CreateDataBase.Designer.cs">20201014220349_CreateDataBase.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EF_ContextModelSnapshot.cs">EF_ContextModelSnapshot.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repositories" TargetFolderName="Repositories">
+        <ProjectItem ReplaceParameters="true" TargetFileName="EF_Repository.cs">EF_Repository.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services" />
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppCore\AppCore.csproj" />
-    <ProjectReference Include="..\IoC\IoC.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.AppCore\$ext_safeprojectname$.AppCore.csproj" />
+    <ProjectReference Include="..\$ext_safeprojectname$.IoC\$ext_safeprojectname$.IoC.csproj" />
   </ItemGroup>
 
 </Project>

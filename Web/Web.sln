@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{82CFBABC-4DEC-4D58-9B8A-C73C458B438E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Web", "Web\Template.Web.csproj", "{82CFBABC-4DEC-4D58-9B8A-C73C458B438E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppCore", "AppCore\AppCore.csproj", "{D5E4F8D0-633B-4F17-8C60-E3F82515DAE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.AppCore", "AppCore\Template.AppCore.csproj", "{D5E4F8D0-633B-4F17-8C60-E3F82515DAE2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F190517C-35E4-4F17-8F0A-AD6B6BC2B046}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Infrastructure", "Infrastructure\Template.Infrastructure.csproj", "{F190517C-35E4-4F17-8F0A-AD6B6BC2B046}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC", "IoC\IoC.csproj", "{939C3836-DDC9-4E31-ADBB-5574FFF22FE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.IoC", "IoC\Template.IoC.csproj", "{939C3836-DDC9-4E31-ADBB-5574FFF22FE9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A61E9108-8A6C-4635-B7EC-5D3797EBA2F1}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{F96B70A1-E5CA-4186-AE0B-EA51BC799847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalTests", "FunctionalTests\FunctionalTests.csproj", "{AB9DC0A4-975E-4D6D-96A6-F6C86F983AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalTests", "FunctionalTests\FunctionalTests.csproj", "{AB9DC0A4-975E-4D6D-96A6-F6C86F983AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

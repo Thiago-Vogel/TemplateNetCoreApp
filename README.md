@@ -9,5 +9,6 @@ Project created by Thiago Vogel Motta
 
 # Updates 
 * 1 - First commit version of a sample template
-* 2 - Adding full project to source control
+* 2 - Add full project to source control
+* 3 - Add vstemplate Files to source control
 * 2 - Upcoming... (Front end application template)
